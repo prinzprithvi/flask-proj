@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}{%endblock%}</title>
+    <meta name="description" content="Pixuate is a image processing platform as a service. Pixuate provides Image Processing API's. Pixuate is a Cloud Image Processing, Signup for 30 days trial" />
+    <meta name="keywords" content="cloud image processing, image processing api, image processing platform, image comparison api, face recognition api, face detection api,expression detection api , image processing web service, image processing service, image comparison web service, image processing platform, ocr, optical character recognition, image filters, template matching, image compare, match image, ocr api" />
+<meta name="google-site-verification" content="2c7S7LI59Q3tx842jssbMlpZ3Duu_qTgEMkkGroh0fg" /> 
+
+    {% block styles %}
+  {% endblock %}
+  <!--[if lt IE 9]>
+    <script src="{{ url_for('static', filename='js/ie/respond.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/ie/html5.js') }}"></script>
+
+  <![endif]-->
+    <script src="{{ url_for('static', filename='js/jquery.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.js')}}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+
+</head>
+<body>
+
+     {% block maincontents %}
+     {% endblock %}
+  </body>
+</html>
+
